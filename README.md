@@ -26,15 +26,17 @@ azure group deployment create --template-uri https://raw.githubusercontent.com/A
 ```
 as location you can use northeurope or any other location supported by azure.
 
+## Alternatives
+
+http://developers.redhat.com/blog/2016/10/11/four-creative-ways-to-create-an-openshiftkubernetes-dev-environment/
+
 ## Diagram
 
 <img src="azure-openshift-deployment-quickstart-template.png" />
 
-## Portal Azure (web)
-
 # Openshift
 
-## Architektue
+## Architectue
 
 please visit
 
@@ -43,6 +45,42 @@ https://docs.openshift.org/latest/architecture/index.html .
 and read in German
 
 https://github.com/appuio/techlab/blob/lab-3.2/labs/01_quicktour.md
+
+## Key Concepts
+
+Container / Virtualisierung nichts neues
+
+Classic VM Virtualisierung vs Container
+
+docker als container : ubuntu + java + wildfly +  application + runtime FS, der rest ist read only
+
+definition vom container ist dockerfile
+pro node gibt es container = pod von kubernets
+
+openshift building blocks: docker, kubernetes, sdn, etcd
+
+open shift pay muss auf RHEL oder Atomic Host 7.2 laufen
+
+pro node gibt es container = pod von kubernets
+
+nfs classisch persistent storage cluster fs new
+
+openshift 3.3 andere proxy ausser http / https
+
+architecture
+
+jedes project hat ein eigenes netzwerk
+
+
+
+### v2 <-> v3 comparison
+
+| Version 2        | Version 3               |
+|------------------|-------------------------|
+| Namespace/Domain | Project                 |
+| Gear             | Container               |
+| Cartridge        | Docker Image (Template) |
+| rhc              | oc                      |
 
 ## Workshop
 
