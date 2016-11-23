@@ -1,3 +1,4 @@
+
 # Introduction
 
 Following topics should be addressed by this workshop
@@ -46,12 +47,18 @@ https://github.com/appuio/techlab/blob/lab-3.2/labs/01_quicktour.md
 ## Workshop
 
 1. Install the openshfit client tools 'oc' command line tool
-  asdfasdf
-
-2. The fine folks from appuio provided a good techlab workshop to go through the basics of openshift.
-  The techlab is in German
+  use this guide for the installation
   
+  https://docs.openshift.org/latest/cli_reference/get_started_cli.html#installing-the-cli
   
+  or use the appuio guide in German
+  
+  https://github.com/appuio/techlab/blob/lab-3.2/labs/02_cli.md
+  
+2. The fine folks from appuio provided a very good techlab workshop to go through the basics of openshift.
+ complete the following workshop. maybe not all steps will work (specially the later onces).
+ The techlab is completely in German
+   
  https://github.com/appuio/techlab
 
 ## Configuration
