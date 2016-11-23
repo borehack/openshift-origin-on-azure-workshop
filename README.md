@@ -27,7 +27,7 @@ as location you can use northeurope or any other location supported by azure.
 
 ## Diagram
 
-
+<img src="azure-openshift-deployment-quickstart-template.png" />
 
 ## Portal Azure (web)
 
