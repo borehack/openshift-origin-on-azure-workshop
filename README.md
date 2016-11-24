@@ -46,32 +46,20 @@ and read in German
 
 https://github.com/appuio/techlab/blob/lab-3.2/labs/01_quicktour.md
 
+<img src="openshift-architecture-overview.png" />
+
 ## Key Concepts
 
-Container / Virtualisierung nichts neues
+* Projects
+ In Openshift a project is a kubernetes namespace with additional attributes. With a projects other resources are grouped.
+ Openshift uses software defined network (SDN) to isolate projects from each other as much as possible.
 
-Classic VM Virtualisierung vs Container
+* Container and Images
+ Everything runs in a container. container are either build by source 2 image (S2I Build containers) or pulled from docker registry. Created container are pushed in a image registry to be later deployed and run. One container can consist of for example ubuntu + java + wildfly + application.
 
-docker als container : ubuntu + java + wildfly +  application + runtime FS, der rest ist read only
-
-definition vom container ist dockerfile
-pro node gibt es container = pod von kubernets
-
-openshift building blocks: docker, kubernetes, sdn, etcd
-
-open shift pay muss auf RHEL oder Atomic Host 7.2 laufen
-
-pro node gibt es container = pod von kubernets
-
-nfs classisch persistent storage cluster fs new
-
-openshift 3.3 andere proxy ausser http / https
-
-architecture
-
-jedes project hat ein eigenes netzwerk
-
-
+* Pods and Services
+ A pod contains one or more container and is the unit managed (start, stop, restart, scale) by kubernetes at runtime.
+ Within a projects a set of pods (replicated set) can be identified by services. each searvices can be exposed to the outside of openshift with routes.
 
 ### v2 <-> v3 comparison
 
